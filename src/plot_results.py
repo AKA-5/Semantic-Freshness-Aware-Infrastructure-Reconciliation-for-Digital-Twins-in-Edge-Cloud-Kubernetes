@@ -61,6 +61,7 @@ ax.set_ylabel('Count', fontsize=12)
 ax.spines['top'].set_visible(False)
 ax.spines['right'].set_visible(False)
 plt.tight_layout()
+ax.set_ylim(0, 25) # Gives extra room at the top
 plt.savefig("results/plot_edgesimpy.png", dpi=300)
 plt.close()
 
