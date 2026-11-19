@@ -40,6 +40,13 @@ Our work reproduces and extends:
 
 ---
 
+### Experimental Scripts
+- `src/simulate_reconciliation.py`: Standalone mathematical proof-of-concept comparing 3 policies.
+- `src/edgesimpy_experiment.py`: Integration of the semantic policy into the actual EdgeSimPy discrete-event simulator.
+- `src/plot_results.py`: Generates comparative bar charts for the manuscript.
+
+---
+
 ## Setup
 
 ### Requirements
