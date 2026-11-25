@@ -2,7 +2,7 @@
 
 This repository contains the code, datasets, and results for our research project on **semantic freshness-aware reconciliation** for Digital Twin systems deployed across the edge-cloud continuum.
 
-**Group:** 23I-0777 Mohammad Saeed, 23I-0524 Muhammad Kaleem Akhtar  
+**Group:** 23I-0777 Mohammad Saeed, 23I-0524 Muhammad Kaleem Akhtar
 **Course:** Cloud Computing Research Assignment
 
 ---
@@ -17,9 +17,9 @@ Under what workload, network, and energy conditions does a semantic freshness-aw
 
 Our work reproduces and extends:
 
-> P. S. Souza, T. Ferreto, and R. N. Calheiros, "EdgeSimPy: Python-Based Modeling and Simulation of Edge Computing Resource Management Policies,"  
-> *Future Generation Computer Systems*, vol. 148, pp. 446–459, 2023.  
-> DOI: https://doi.org/10.1016/j.future.2023.06.013  
+> P. S. Souza, T. Ferreto, and R. N. Calheiros, "EdgeSimPy: Python-Based Modeling and Simulation of Edge Computing Resource Management Policies,"
+> *Future Generation Computer Systems*, vol. 148, pp. 446–459, 2023.
+> DOI: https://doi.org/10.1016/j.future.2023.06.013
 > GitHub: https://github.com/EdgeSimPy/edgesimpy
 
 ---
@@ -47,6 +47,7 @@ Our work reproduces and extends:
 ---
 
 ### Experimental Scripts
+
 - `src/simulate_reconciliation.py`: Standalone mathematical proof-of-concept comparing 3 policies.
 - `src/edgesimpy_experiment.py`: Integration of the semantic policy into the actual EdgeSimPy discrete-event simulator.
 - `src/plot_results.py`: Generates comparative bar charts for the manuscript.
@@ -64,7 +65,7 @@ Our work reproduces and extends:
 
 ```bash
 # Clone the repository
-git clone https://github.com/msaeedsaeedi/Semantic-Freshness-Aware-Infrastructure-Reconciliation-for-Digital-Twins-in-Edge-Cloud-Kubernetes.git
+git clone https://github.com/AKA-5/Semantic-Freshness-Aware-Infrastructure-Reconciliation-for-Digital-Twins-in-Edge-Cloud-Kubernetes
 cd Semantic-Freshness-Aware-Infrastructure-Reconciliation-for-Digital-Twins-in-Edge-Cloud-Kubernetes
 
 # Create and activate a virtual environment
@@ -95,11 +96,11 @@ python src/simulate_reconciliation.py
 
 This runs a 1000-tick simulation of three reconciliation policies over 6 services and prints a comparison table:
 
-| Policy | Reconciliations | Avg AoI | Total Overhead |
-|---|---:|---:|---:|
-| Periodic | 20 | 2.0 | 200 |
-| Event-Driven | 61 | 2.0 | 610 |
-| **Semantic (proposed)** | **35** | **2.0** | **550** |
+| Policy                        | Reconciliations |       Avg AoI | Total Overhead |
+| ----------------------------- | --------------: | ------------: | -------------: |
+| Periodic                      |              20 |           2.0 |            200 |
+| Event-Driven                  |              61 |           2.0 |            610 |
+| **Semantic (proposed)** |    **35** | **2.0** |  **550** |
 
 Results are also written to `results/preliminary_results.csv`.
 
@@ -133,5 +134,5 @@ If you reference this work, please cite the base article (EdgeSimPy) and this re
 
 ---
 
-**Reproducibility:** The code and reproducibility materials for this study are publicly available at:  
-https://github.com/msaeedsaeedi/Semantic-Freshness-Aware-Infrastructure-Reconciliation-for-Digital-Twins-in-Edge-Cloud-Kubernetes
+**Reproducibility:** The code and reproducibility materials for this study are publicly available at:
+https://github.com/AKA-5/Semantic-Freshness-Aware-Infrastructure-Reconciliation-for-Digital-Twins-in-Edge-Cloud-Kubernetes
