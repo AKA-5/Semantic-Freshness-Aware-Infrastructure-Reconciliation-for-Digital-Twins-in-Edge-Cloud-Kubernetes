@@ -32,9 +32,15 @@ Our work reproduces and extends:
 │   ├── README.md                    # Dataset documentation
 │   └── sample_dataset2.json         # EdgeSimPy reference dataset
 ├── results/
-│   └── preliminary_results.csv      # Output of the preliminary simulation
+│   ├── preliminary_results.csv      # Output of the preliminary simulation
+│   ├── plot_reconciliations.png     # Comparative reconciliations bar chart
+│   ├── plot_overhead.png            # Comparative overhead bar chart
+│   └── plot_edgesimpy.png           # EdgeSimPy integration results chart
 ├── src/
-│   └── simulate_reconciliation.py   # Simulation of the three policies
+│   ├── simulate_reconciliation.py   # Phase 1: Standalone mathematical model
+│   ├── edgesimpy_experiment.py      # Phase 2: EdgeSimPy integration
+│   └── plot_results.py              # Generates comparative bar charts
+├── Final_Poster.pdf                 # Research project poster
 └── README.md
 ```
 
@@ -111,7 +117,7 @@ Results are also written to `results/preliminary_results.csv`.
 
 - Random seed is fixed at `42` in `src/simulate_reconciliation.py` for reproducibility.
 - Simulation parameters (thresholds, intervals, costs) are declared at the top of the script.
-- The full research manuscript is maintained in Overleaf and will be linked here upon submission.
+- The full research manuscript and LaTeX source are publicly available on Overleaf at: https://www.overleaf.com/read/zmhvdtqfqbfp#872d1c
 
 ---
 
